@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Daniel Chang's Python Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<h1><a href="index.html" id="logo">Daniel Chang's Portfolio</a></h1>
+
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+												<li><a href="index.html">Home</a></li>
+												<li>
+													<a href="#">Projects</a>
+													<ul>
+														<li class="current_page_item"><a href="python_project.html">Python Projects</a></li>
+														<li><a href="r-projects.html">R Projects</a></li>
+														<li>
+															<a href="#">Other Projects</a>
+															<ul>
+																<li><a href="sql_project.html">SQL Projects</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li><a href="visualization.html">EDA</a></li>
+												<li><a href="modeling.html">Modeling</a></li>
+                                                <li><a href="cv.html">CV</a></li>
+												<li><a href="my-journey.html">My Journey</a></li>
+											</ul>
+										</nav>
+
+								</div>
+							</header>
+
+					</div>
+				</div>
+            <!-- Main Wrapper -->
+				<div id="main-wrapper">
+					<div class="wrapper style2">
+						<div class="inner">
+							<div class="container">
+								<div class="row">
+									<div class="col-8 col-12-medium">
+										<div id="content">
+
+									<!-- Content -->
+
+											<article>
+												<header class="major">
+													<h2>Data Science Projects with Python</h2>
+													<p>On this page, you'll find projects I've done with Python!<br>
+														Please click on the project title to access my Github codes.
+													</p>
+												</header>
+
+                                                <section class="borderline">
+													<h3 style="padding-left: 30px;">Table of Content</h3>
+													<ul class="ul2">
+														<li><a href="python_project.html#IBM" style="color: blue">IBM Recommendation Engine with Python</a></li>
+														<li><a href="python_project.html#disaster" style="color: blue">Disaster Response Pipeline Project </a></li>
+														<li><a href="python_project.html#starbucks" style="color: blue">Starbucks Challenge</a></li>
+														<li><a href="python_project.html#london" style="color: blue">London Crime Analysis & Hypothesis Testing (2008-2016)</a></li>
+														<li style = "padding-bottom: 20px;"><a href="python_project.html#nba" style="color: blue">
+                                                            NBA Teams Offensive Data Exploration (1980-2021)</a></li>
+													</ul>
+												</section>
+
+										<!-- Project 1 -->
+                                            <article>
+                                                <h3 id = "IBM"><a href="https://github.com/Mr-Chang95/Portfolio/tree/master/Proj%236%20-%20IBM%20Recommendation%20" style="color: blue">
+                                                    IBM Recommendation Engine with Python</a>
+                                                </h3>
+                                                <span class="image featured"><img src="images/pic14.png" alt="Scatter Plot" /></span>
+
+                                                <p>This project was designed to analyze the interactions that users have with articles on the IBM Watson Studio platform, 
+                                                    and make recommendations to them about new articles that they might be interested in.
+                                                </p>
+
+                                                <h4>PROJECT INFORMATION</h4>
+                                                <p><ul class="divided">
+                                                    <li><strong>Exploratory Data Analysis</strong></li>
+                                                    <li><strong>Rank Based Recommendations:</strong> Here, I begin by finding the most popular articles based on the most interactions. 
+                                                        These articles are the ones that we might recommend to new users.</li>
+                                                    <li><strong>User-User Based Collaborative Filtering:</strong> In order to give better recommendations to the users of IBM's platform, 
+                                                        I examine users that are similar in terms of the items they have interacted with. These items could then be recommended to similar 
+                                                        users.</li>
+                                                    <li><strong>Matrix Factorization:</strong> For the final step, I created a machine learning approach to building recommendations. 
+                                                        Using the user-item interactions, I built out a matrix decomposition which helps me in predicting new articles an individual might interact 
+                                                        with .</li>
+                                                </ul>
+                                            </article>
+
+                                            <!-- Project 2 -->
+                                            <article>
+                                                <h3 id ="disaster"><a href="https://github.com/Mr-Chang95/Portfolio/tree/master/Proj%237%20-%20Disaster%20Response%20Pipeline" style="color: blue">
+                                                    Disaster Response Pipeline Project</a>
+                                                </h3>
+                                                <span class="image featured"><img src="images/pic15.png" alt="Scatter Plot" /></span>
+                                                
+                                                <h4>PROJECT INFORMATION</h4>
+                                                <p> In this project, I will create a machine learning/NLP pipeline to categorize these events and build a model to classify messages that 
+                                                    are sent during disasters. There are 36 pre-defined categories, and examples of these categories include Aid Related, Medical Help, 
+                                                    Search And Rescue, etc. By classifying these messages, we can allow these messages to be sent to the appropriate disaster relief agency. 
+                                                    The dataset -provided by Figure Eight- is used to build a model that classifies disaster messages, while the web app is where a respondent 
+                                                    can input a new message and get classification results in several categories.
+                                                    <span class="image featured"><img src="images/pic16.png" alt="Scatter Plot" 
+                                                        width="400" 
+                                                        height="600"/></span>
+                                                    Finally, this project also contains a web app that allows you to input a message and get classification results.
+
+                                                </p>
+                                            </article>
+
+                                            <!-- Project 3 -->
+                                            <article>
+                                                <h3 id = "starbucks"><a href="https://github.com/Mr-Chang95/Udacity-Starbucks-Challenge" style="color: blue">
+                                                    Starbucks Challenge</a>
+                                                </h3>
+                                                <span class="image featured"><img src="images/pic17.png" alt="Scatter Plot" /></span>
+                                                
+                                                <h4>PROJECT INFORMATION</h4>
+                                                <p> Starbucks, one of the world’s most popular coffee shops, frequently provides offers to its customers through its rewards 
+                                                    app to drive more sales. These offers can be merely an advertisement for a drink or an actual offer such as a discount or 
+                                                    BOGO (buy one get one free).
+                                                    <span class="image featured"><img src="images/pic18.png" alt="Scatter Plot" /></span>
+                                                    The goal of this project is to find some factors and build a machine learning(ML) that predicts what makes a customer 
+                                                    complete an offer(regardless of the offer type). I am mostly interested in the demographics as I believe that they are bigger 
+                                                    factors than the offer types.
+                                                    <p>Firstly, to best analyze the data thoroughly, Exploratory Data Analysis(EDA) is performed to find the data representations & 
+                                                        characteristics. In this step, I will get to know the data better, as well as clean it. Secondly, with the data provided, I 
+                                                        will answer the above questions with the help of charts and various ML models which will be fed the data from a merged dataset 
+                                                        which consists of the following: portfolio, profile, transactional. </p>
+                                                </p>
+                                            </article>
+
+                                            <!-- Project 4 -->
+											<article>
+                                                </header>
+                                                    <h3 id = "london"><a href="https://github.com/Mr-Chang95/London-Crime-Hypothesis-Testing" style="color: blue">
+                                                        London Crime Analysis & Hypothesis Testing (2008-2016)</a></h3>
+                                                    <span class="image featured"><img src="images/pic19.png" alt="Histgram of Hypothesis Testing" /></span>
+
+                                                    <p>In this project, I am interested in working to understand the crime rate in London, England. My goal is to work through this notebook to 
+                                                        understand violent crime rates and when they are likely to occur throughout the year. This dataset contains all crimes (non-violent and 
+                                                        violent) committed between 2008 and 2016. However, the nature of the crime-violent or non-violent- is not specified in this dataset, so 
+                                                        we will need to deal with that during the preprocessing phase. We will also need to specify which months are the ones when daylight saving 
+                                                        is in effect.
+                                                    </p>
+
+                                                    <h4>Project Information</h4>
+                                                    <p>There are a total of 2 notebooks dedicated to this project. This first notebook(London Crime Hypothesis Testing.ipynb) is dedicated to testing 
+                                                        the individual factors(borough/location & daylight saving) that I think may affect the violent crime rate while the second 
+                                                        notebook(London Crime Hypothesis Testing Part II.ipynb) to testing the interactions between location/borough and daylight saving for any 
+                                                        significant effect on the rate.
+                                                    </p>
+
+                                                    <p>
+                                                        My initial assumption is that violent crime rates increase when daylight saving is not in effect, which means that the night is longer. Therefore, our hypothesises are:
+                                                        <ul class="style2">
+                                                        <li>Null Hypothesis: The difference between the violent crime rates when daylight saving is and isn't in effect is less than or equal to 0.</li>
+
+                                                        <li>Alternative Hypothesis: The difference between the violent crime rates when daylight saving is and isn't in effect is greater than 0.</li>
+                                                        </ul>
+                                                </p>
+                                            </article>
+
+                                        <!-- Project 5 -->
+											<article>
+                                                </header>
+                                                    <h3 id="nba"><a href="https://github.com/Mr-Chang95/Portfolio/tree/master/Proj%231%20-%20NBA%20Data%20Wrangling%20%26%20Exploration" style="color: blue">
+                                                        NBA Teams Offensive Data Exploration (1980-2021)</a></h3>
+                                                    <span class="image featured"><img src="images/pic08.png" alt="Boxplot of TS% Across Era and Rankings" /></span>
+
+                                                    <p>For this project, I am mainly interested in conducting data exploration and analysis on the offensive stats and characteristics of 
+                                                        different NBA teams between 1980 and 2021  based on Finals ranking which is a new column I will create that contains 4 values: Champion, Runner-Up, 
+                                                        Knocked Out and Never Qualified. Knocked Out and Never Qualified implies that they have either been knocked out of or never qualified 
+                                                        for the NBA playoffs. Some stats that you will see me analyze and visualize are Margin of Victory(MOV), 3P%, Age and shot attempts.
+                                                    </p>
+
+                                                    <h4>Project Information</h4>
+                                                    <p>To begin, I scraped data from the Basketball Reference website, which contains each team's performances throughout the years. 
+                                                        I scraped a total of 4 different stats tables from the website and stored them in 4 different datasets. In this notebook, I used 
+                                                        3 different packages: Pandas, BeautifulSoup and Requests.
+                                                    </p>
+
+                                                    <p>
+                                                        I will then clean the data. Some steps I took here are dealing with null values, dropping unneeded columns, converting datatypes and 
+                                                        cleaning up the values. After cleaning up the data, I merged 4 of the datasets into 2. I have also created a new column to indicate 
+                                                        the NBA teams' Finals ranking in this notebook. One consists of the teams' total stats per year and one consists of the average stats 
+                                                        per game for each year. In this notebook, I used 2 different packages: Pandas and Numpy.
+                                                    </p>
+                                                    <span class="image featured"><img src="images/pic10.png" alt="" /></span>
+                                                    <p>Lastly, I will analyze and create some visualizations of the stats. I started off by analyzing the total stats first to get a broad picture 
+                                                        view by conducting and creating visuals for univariate and bivariate exploration. Afterward, I moved onto the average stats per game of 
+                                                        each year where I conducted the same type of explorations along with multivariate exploration. You will find that I have also created a couple 
+                                                        categorical variables for my analysis as well. In this notebook, I used 5 different packages: Pandas, Numpy, Seaborn, Matplotlib and Warnings. 
+                                                        You will find the majority of the multivariate exploration near the end and a lengthy conclusion.
+                                                    </p>
+                                            </article>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-12-medium">
+                                        <div id="sidebar">
+
+                                            <!-- Sidebar -->
+
+                                                <section>
+                                                    <header class="major">
+                                                        <h2>Quick Start to Github Codes</h2>
+                                                    </header>
+                                                    <ul class="style2">
+                                                        <li><a href="https://github.com/Mr-Chang95" style="color: blue">Github Home</a></li>
+                                                        <li><a href="https://github.com/Mr-Chang95/IBM_Recommendation_System" style="color: blue">
+                                                            IBM Recommendation Engine with Python</a></li>
+                                                        <li><a href="https://github.com/Mr-Chang95/Disaster_Response_Pipeline" style="color: blue">
+                                                            Disaster Response Pipeline Project</a></li>
+                                                        <li><a href="https://github.com/Mr-Chang95/Udacity-Starbucks-Challenge" style="color: blue">
+                                                            Starbucks Challenge</a></li>
+                                                        <li><a href="https://github.com/Mr-Chang95/London-Crime-Hypothesis-Testing" style="color: blue">
+                                                            London Crime Analysis & Hypothesis Testing (2008-2016)</a></li>
+                                                        <li></li><a href="https://github.com/Mr-Chang95/NBA-Data-Wrangling-Exploration" style="color: blue">
+                                                            NBA Teams Offensive Data Exploration (1980-2021)</a></li>
+                                                    </ul>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrapper style3">
+                            <div class="inner">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-8 col-12-medium">
+
+                                            <!-- Article list -->
+											<section class="box article-list">
+												<h2 class="icon fa-file-alt">Recent Projects</h2>
+
+												<!-- Excerpt -->
+													<article class="box excerpt">
+														<img src="images/pic04.png" class = "sidebox" alt="" /></a>
+														<div>
+															<header>
+																<span class="date">December 10, 2022</span>
+																<h3><a href="modeling.html#employee_prediction" style="color: blue">Employee Analysis & Predictions</a></h3>
+															</header>
+															<p>In this project, I will identify the top three factors that contribute to turnover 
+																(backed up by evidence provided by analysis). The analysis is backed up by robust 
+																experimentation and appropriate visualization. Additionally, we also want to build a 
+																model that accurately predicts employee salary.
+															</p>
+														</div>
+													</article>
+
+												<!-- Excerpt -->
+													<article class="box excerpt">
+														<img src="images/pic05.png" class = "sidebox" alt="" /></a>
+														<div>
+															<header>
+																<span class="date">December 10, 2022</span>
+																<h3><a href="modeling.html#Home_Prediction" style="color: blue">Home Sale Price Predictions</a></h3>
+															</header>
+															<p>Build a model that get an estimate of how the SalePrice of the house is related to the square 
+																footage of the living area of the house and if the SalesPrice depends on which of 3 interested neighborhood 
+																the house is located in. Next, build the most predictive model with as many neccessary for sales prices of 
+																homes in all of Ames Iowa.
+															</p>
+														</div>
+													</article>
+
+												<!-- Excerpt -->
+													<article class="box excerpt">
+														<img src="images/pic06.png" class = "sidebox" alt="" /></a>
+														<div>
+															<header>
+																<span class="date">October 22, 2022</span>
+																<h3><a href="visualization.html#Beer_Project" style="color: blue">Beer Analysis project with R</a></h3>
+															</header>
+															<p>Assume that the audience is the CEO and CFO of Budweiser (your client) and that they only have had 
+																one class in statistics and have indicated that I cannot take more than 7 minutes of their time. 
+																They have hired you to address 9 questions / items.</p>
+														</div>
+													</article>
+
+											</section>
+									</div>
+									<div class="col-4 col-12-medium">
+
+										<!-- Spotlight -->
+											<section class="box spotlight">
+												<h2 class="icon fa-file-alt">Project Spotlight</h2>
+												<article>
+													<a href="#" class="image featured"><img src="images/pic07.png" alt=""></a>
+													<header>
+														<h3><a href="modeling.html#response_pipeline" style = "color: blue">Disaster Response Pipeline</a></h3>
+														<p>Create an NLP pipeline to help people in needs</p>
+													</header>
+													<p>Create a machine learning/NLP pipeline to categorize these events and build a model to classify 
+														messages that are sent during disasters.</p>
+													<p>By classifying these messages, we can allow these messages to be sent to the appropriate disaster 
+														relief agency. The dataset -provided by Figure Eight- is used to build a model that classifies disaster messages, 
+														while the web app is where a respondent can input a new message and get classification results in several categories.</p>
+													<footer>
+														<a href="modeling.html#response_pipeline" class="button alt icon solid fa-file-alt">Let Me See!</a>
+													</footer>
+												</article>
+											</section>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                            <!-- Footer Wrapper -->
+                            <div id="footer-wrapper">
+                                <footer id="footer" class="container">
+                                    <div class="row">
+                                        <div>
+            
+                                            <!-- Links -->
+                                                <section>
+                                                    <h2>Direct Project Links</h2>
+                                                    <ul class="divided">
+                                                        <li><a href="modeling.html#employee_prediction">Emloyee Analysis & Predictions</a></li>
+                                                        <li><a href="modeling.html#Home_Prediction">Home Sale Price Predictions </a></li>
+                                                        <li><a href="visualization.html#Beer_Project">Beer Analysis Project with R</a></li>
+                                                        <li><a href="sql_project.html#movie">Investigating Sakila DVD Rental Database with SQL</a></li>
+                                                    </ul>
+                                                </section>
+            
+                                        </div>
+                                        
+                                        <div>
+            
+                                            <!-- About -->
+                                                <section>
+                                                    <h2><strong>Education</strong></h2>
+                                                    <p><li> <strong>Univeristy of California, Santa Barbara: B.A. in History, 2021</strong></li>
+                                                        <li><strong>Southern Methodist University: M.S. in Data Science, 2024</strong></li></p>
+                                                        <a href="my-journey.html" class="button small icon solid fa-arrow-circle-right">Learn More About Me!</a>
+                                                </section>
+                                        </div>
+                                        <div>
+                                            <!-- Contact -->
+                                                <section>
+                                                    <h2>Get in touch</h2>
+                                                    <div>
+                                                        <div class="row">
+                                                            <div>
+                                                                <dl class="contact">
+                                                                    <dt>LinkedIn</dt>
+                                                                    <dd><a href="https://www.linkedin.com/in/dannyc104/">@Dannyc104</a></dd>
+                                                                    <dt>Github</dt>
+                                                                    <dd><a href="https://github.com/Mr-Chang95">@Mr-Chang95</a></dd>
+                                                                    <dt>Email</dt>
+                                                                    <dd>mr.dcny@gmail.com</dd>
+                                                                </dl>
+                                                            </div>
+                                                </section>
+            
+                                        </div>
+                                        <div class="col-12">
+                                            <div id="copyright">
+                                                <ul class="menu">
+                                                    <li>&copy; Daniel Chang's Portfolio. All rights reserved</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+            
+                    </div>
+
+            <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.dropotron.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+
+        </body>
+    </html>

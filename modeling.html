@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Data Modeling</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<h1><a href="index.html" id="logo">Daniel Chang's Portfolio</a></h1>
+
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+												<li><a href="index.html">Home</a></li>
+												<li>
+													<a href="#">Projects</a>
+													<ul>
+														<li><a href="python_project.html">Python Projects</a></li>
+														<li><a href="r-projects.html">R Projects</a></li>
+														<li>
+															<a href="#">Other Projects</a>
+															<ul>
+																<li><a href="sql_project.html">SQL Projects</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li><a href="visualization.html">EDA</a></li>
+												<li class="current_page_item"><a href="modeling.html">Modeling</a></li>
+												<li><a href="cv.html">CV</a></li>
+												<li><a href="my-journey.html">My Journey</a></li>
+											</ul>
+										</nav>
+
+								</div>
+							</header>
+
+					</div>
+				</div>
+
+			<!-- Main Wrapper -->
+				<div id="main-wrapper">
+					<div class="wrapper style2">
+						<div class="inner">
+							<div class="container">
+								<div class="row">
+									<div class="col-8 col-12-medium">
+										<div id="content">
+
+									<!-- Content -->
+
+											<article id = "employee_prediction">
+												<header class="major">
+													<h2>Building Models</h2>
+													<p>On this page, you'll find projects related to creating the best model possible!<br>
+														Please click on the project title to access my Github codes.
+													</p>
+												</header>
+
+												<section class="borderline">
+													<h3 style="padding-left: 30px;">Table of Content</h3>
+													<ul class="ul2">
+														<li><a href="modeling.html#employee_prediction" style="color: blue">Emloyee Analysis & Predictions</a></li>
+														<li><a href="modeling.html#Home_Prediction" style="color: blue">Home Sale Price Predictions </a></li>
+														<li><a href="modeling.html#IBM" style="color: blue">IBM Recommendation Engine</a></li>
+														<li><a href="modeling.html#response_pipeline" style="color: blue">Disaster Response Pipeline</a></li>
+														<li style = "padding-bottom: 20px;"><a href="modeling.html#starbucks" style="color: blue">Building Models: Starbucks Challenge</a></li>
+													</ul>
+												</section>
+
+												<!-- project 1 -->
+												<h3><a href="https://github.com/Mr-Chang95/MSDS6306-Employee-Analysis" style="color: blue">
+													Employee Predictions with Naive-Bayes & Linear Regression in R</a>
+												</h3>
+												<span class="image featured"><img src="images/pic11.png" alt="" /></span>
+
+												<p>DDSAnalytics is an analytics company that specializes in talent management solutions for Fortune 100 companies. 
+													Talent management is defined as the iterative process of developing and retaining employees. It may include workforce planning, employee training programs, 
+													identifying high-potential employees and reducing/preventing voluntary employee turnover (attrition). To gain a competitive edge over its 
+													competition, DDSAnalytics is planning to leverage data science for talent management. The executive leadership has identified predicting 
+													employee turnover as its first application of data science for talent management.
+												</p>
+
+												<h4>PROJECT INFORMATION</h4>
+												<p>In this project, I will identify the top three factors that contribute to turnover (backed up by evidence provided by analysis). 
+													The business is also interested in learning about any job role specific trends that may exist in the data set. You can also provide 
+													any other interesting trends and observations from your analysis. The analysis is backed up by robust experimentation and appropriate 
+													visualization.
+												</p>
+
+												<p>There are two goals to this project. First, we want to find factors that lead to attrition and determine monthly income with EDA.
+													Secondly , we want to build two prediction models with our chosen factors that can accurately predict both of the variables mentioned
+													above. Lastly, we want to use our model to predict the value of these variables on 2 different test datasets. The two models that we 
+													found work best are the Naive-Bayes model for attrition and Linear Regression model for salary. We also tried the KNN model. Additionally,
+													a video presentation was also made to address our findings.
+												</p>
+												<p align="center"><a href="https://drive.google.com/file/d/1srzTIJI2Ow2vudsjGM2-xGMUC6uKXKr_/view"  class="button alt icon solid fa-arrow-circle-right" >
+													Video Presentation</p></a>
+											</article>
+
+											<!-- Project 2 -->
+											<article id ="Home_Prediction">
+											<h3><a href="https://github.com/Mr-Chang95/MSDS6371-Project-Home-Prices-Predictions" style="color: blue">
+												Home Sale Price Prediction with SAS & R</a>
+											</h3>
+											<span class="image featured"><img src="images/pic12.png" alt="Scatter Plot" /></span>
+
+											<p>Ask a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the 
+												proximity to an east-west railroad. But this Kaggle competition's dataset proves that much more influences price negotiations 
+												than the number of bedrooms or the presence of a white-picket fence! With 79 explanatory variables describing (almost) every aspect 
+												of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home. The entire process will 
+												be done in R and SAS. SAS is used for the first analysis question and variable selection.
+											</p>
+
+											<h4>PROJECT INFORMATION</h4>
+											<p><strong>Analysis 1:</strong> Century 21 Ames only sells houses in the NAmes, Edwards and BrkSide neighborhoods and would like to simply get 
+												an estimate of how the SalePrice of the house is related to the square footage of the living area of the house (GrLIvArea) and if the SalesPrice
+												(and its relationship to square footage) depends on which neighborhood the house is located in. Build and fit a model that will answer this question, 
+												keeping in mind that realtors prefer to talk about living area in increments of 100 sq. ft. Provide your client with the estimate (or estimates if it v
+												aries by neighborhood) as well as confidence intervals for any estimate(s).<br>
+												For this analysis, we also want to create to make an RShiny app that will display at least display a scatterplot of price of the home v. square 
+												footage (GrLivArea) and allow for the plot to be displayed for at least the NAmes, Edwards and BrkSide neighborhoods separately.
+											</p>
+
+											<p><strong>Analysis 2: </strong> Build the most predictive model for sales prices of homes in all of Ames Iowa. This includes all neighborhoods. 
+												Your group is limited to only the techniques we have learned in 6371 (no random forests or other methods we have not yet covered). 
+												Specifically, you should produce 4 models: one from forward selection, one from backwards elimination, one from stepwise selection, and 
+												one that you build custom. The custom model could be one of the three preceding models or one that you build by adding or subtracting variables 
+												at your will. Generate an adjusted R-Squared, CV Press and Kaggle Score for each of these models and clearly describe which model you feel is the
+												best in terms of being able to predict future sale prices of homes in Ames, Iowa. We will use all 4 our models to predict the Saleprice on a test 
+												dataset(test.csv). <br>
+												In the end, we want to write a 7 page report discussing our findings along with an appendix that includes all of our codes.
+											</p>
+											<p align="center">
+												<a href="https://x0s00e-danny-chang.shinyapps.io/Home_Price_Shiny/?_ga=2.124718090.1268003529.1670802137-241624307.1669589829" 
+												class="button alt icon solid fa-arrow-circle-right" >
+												Rshiny App
+												<a href="https://drive.google.com/file/d/1r8GQySCEdYIMXOfIVf5vcA2eYvNjhjqJ/view" 
+												class="button alt icon solid fa-arrow-circle-right" >
+												Report</p></a>
+											</p></a>
+										</article>
+
+										<!-- Project 3 -->
+										<article id = "IBM">
+											<h3><a href="https://github.com/Mr-Chang95/Portfolio/tree/master/Proj%236%20-%20IBM%20Recommendation%20" style="color: blue">
+												IBM Recommendation Engine with Python</a>
+											</h3>
+											<span class="image featured"><img src="images/pic14.png" alt="Scatter Plot" /></span>
+
+											<p>This project was designed to analyze the interactions that users have with articles on the IBM Watson Studio platform, 
+												and make recommendations to them about new articles that they might be interested in.
+											</p>
+
+											<h4>PROJECT INFORMATION</h4>
+											<p><ul class="divided">
+												<li><strong>Exploratory Data Analysis</strong></li>
+												<li><strong>Rank Based Recommendations:</strong> Here, I begin by finding the most popular articles based on the most interactions. 
+													These articles are the ones that we might recommend to new users.</li>
+												<li><strong>User-User Based Collaborative Filtering:</strong> In order to give better recommendations to the users of IBM's platform, 
+													I examine users that are similar in terms of the items they have interacted with. These items could then be recommended to similar 
+													users.</li>
+												<li><strong>Matrix Factorization:</strong> For the final step, I created a machine learning approach to building recommendations. 
+													Using the user-item interactions, I built out a matrix decomposition which helps me in predicting new articles an individual might interact 
+													with .</li>
+											</ul> </p>
+										</article>
+
+										<!-- Project 3 -->
+										<article id ="response_pipeline">
+											<h3><a href="https://github.com/Mr-Chang95/Disaster_Response_Pipeline" style="color: blue">
+												Disaster Response Pipeline Project</a>
+											</h3>
+											<span class="image featured"><img src="images/pic15.png" alt="Scatter Plot" /></span>
+											
+											<h4>PROJECT INFORMATION</h4>
+											<p> In this project, I will create a machine learning/NLP pipeline to categorize these events and build a model to classify messages that 
+												are sent during disasters. There are 36 pre-defined categories, and examples of these categories include Aid Related, Medical Help, 
+												Search And Rescue, etc. By classifying these messages, we can allow these messages to be sent to the appropriate disaster relief agency. 
+												The dataset -provided by Figure Eight- is used to build a model that classifies disaster messages, while the web app is where a respondent 
+												can input a new message and get classification results in several categories.
+												<span class="image featured"><img src="images/pic16.png" alt="Data Pipeline Dashboard" /></span>
+												Finally, this project also contains a web app that allows you to input a message and get classification results.
+
+											</p>
+										</article>
+
+										<!-- Project 4 -->
+										<article id="starbucks">
+											<h3><a href="https://github.com/Mr-Chang95/Udacity-Starbucks-Challenge" style="color: blue">
+												Building Models: Starbucks Challenge</a>
+											</h3>
+											<span class="image featured"><img src="images/pic17.png" alt="STable of Models" /></span>
+											
+											<h4>PROJECT INFORMATION</h4>
+											<p> Starbucks, one of the world’s most popular coffee shops, frequently provides offers to its customers through its rewards 
+												app to drive more sales. These offers can be merely an advertisement for a drink or an actual offer such as a discount or 
+												BOGO (buy one get one free).
+												<span class="image featured"><img src="images/pic18.png" alt="Violin Plot: Income" /></span>
+												The goal of this project is to find some factors and build a machine learning(ML) that predicts what makes a customer 
+												complete an offer(regardless of the offer type). I am mostly interested in the demographics as I believe that they are bigger 
+												factors than the offer types.
+												<p>Firstly, to best analyze the data thoroughly, Exploratory Data Analysis(EDA) is performed to find the data representations & 
+													characteristics. In this step, I will get to know the data better, as well as clean it. Secondly, with the data provided, I 
+													will answer the above questions with the help of charts and various ML models which will be fed the data from a merged dataset 
+													which consists of the following: portfolio, profile, transactional. </p>
+											</p>
+										</article>
+
+									</div>
+								</div>
+								<div class="col-4 col-12-medium">
+									<div id="sidebar">
+
+										<!-- Sidebar -->
+
+											<section>
+												<header class="major">
+													<h2>Quick Start to Github Codes</h2>
+												</header>
+												<ul class="style2">
+													<li><a href="https://github.com/Mr-Chang95" style="color: blue">Github Home</a></li>
+													<li></li><a href="https://github.com/Mr-Chang95/MSDS6306-Employee-Analysis" style="color: blue">
+														Employee Prediction with R</a></li>
+													<li><a href="https://github.com/Mr-Chang95/MSDS6371-Project-Home-Prices-Predictions" style="color: blue">
+														Home Price Prediction with R</a></li>
+													<li><a href="https://github.com/Mr-Chang95/IBM_Recommendation_System" style="color: blue">
+														IBM Recommendation Engine with Python</a></li>
+													<li><a href="https://github.com/Mr-Chang95/Disaster_Response_Pipeline" style="color: blue">
+														Disaster Response Pipeline Project</a></li>
+													<li><a href="https://github.com/Mr-Chang95/Udacity-Starbucks-Challenge" style="color: blue">
+														Starbucks Challenge</a></li>
+												</ul>
+											</section>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrapper style3">
+						<div class="inner">
+							<div class="container">
+								<div class="row">
+									<div class="col-8 col-12-medium">
+
+										<!-- Article list -->
+										<section class="box article-list">
+											<h2 class="icon fa-file-alt">Recent Projects</h2>
+
+											<!-- Excerpt -->
+												<article class="box excerpt">
+													<img src="images/pic04.png" class = "sidebox" alt="" /></a>
+													<div>
+														<header>
+															<span class="date">December 10, 2022</span>
+															<h3><a href="modeling.html#employee_prediction" style="color: blue">Employee Analysis & Predictions</a></h3>
+														</header>
+														<p>In this project, I will identify the top three factors that contribute to turnover 
+															(backed up by evidence provided by analysis). The analysis is backed up by robust 
+															experimentation and appropriate visualization. Additionally, we also want to build a 
+															model that accurately predicts employee salary.
+														</p>
+													</div>
+												</article>
+
+											<!-- Excerpt -->
+												<article class="box excerpt">
+													<img src="images/pic05.png" class = "sidebox" alt="" /></a>
+													<div>
+														<header>
+															<span class="date">December 10, 2022</span>
+															<h3><a href="modeling.html#Home_Prediction" style="color: blue">Home Sale Price Predictions</a></h3>
+														</header>
+														<p>Build a model that get an estimate of how the SalePrice of the house is related to the square 
+															footage of the living area of the house and if the SalesPrice depends on which of 3 interested neighborhood 
+															the house is located in. Next, build the most predictive model with as many neccessary for sales prices of 
+															homes in all of Ames Iowa.
+														</p>
+													</div>
+												</article>
+
+											<!-- Excerpt -->
+												<article class="box excerpt">
+													<img src="images/pic06.png" class = "sidebox" alt="" /></a>
+													<div>
+														<header>
+															<span class="date">October 22, 2022</span>
+															<h3><a href="visualization.html#Beer_Project" style="color: blue">Beer Analysis project with R</a></h3>
+														</header>
+														<p>Assume that the audience is the CEO and CFO of Budweiser (your client) and that they only have had 
+															one class in statistics and have indicated that I cannot take more than 7 minutes of their time. 
+															They have hired you to address 9 questions / items.</p>
+													</div>
+												</article>
+
+										</section>
+								</div>
+								<div class="col-4 col-12-medium">
+
+									<!-- Spotlight -->
+										<section class="box spotlight">
+											<h2 class="icon fa-file-alt">Project Spotlight</h2>
+											<article>
+												<a href="#" class="image featured"><img src="images/pic07.png" alt=""></a>
+												<header>
+													<h3><a href="modeling.html#response_pipeline" style = "color: blue">Disaster Response Pipeline</a></h3>
+													<p>Create an NLP pipeline to help people in needs</p>
+												</header>
+												<p>Create a machine learning/NLP pipeline to categorize these events and build a model to classify 
+													messages that are sent during disasters.</p>
+												<p>By classifying these messages, we can allow these messages to be sent to the appropriate disaster 
+													relief agency. The dataset -provided by Figure Eight- is used to build a model that classifies disaster messages, 
+													while the web app is where a respondent can input a new message and get classification results in several categories.</p>
+												<footer>
+													<a href="modeling.html#response_pipeline" class="button alt icon solid fa-file-alt">Let Me See!</a>
+												</footer>
+											</article>
+										</section>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+
+						<!-- Footer Wrapper -->
+						<div id="footer-wrapper">
+							<footer id="footer" class="container">
+								<div class="row">
+									<div>
+		
+										<!-- Links -->
+											<section>
+												<h2>Direct Project Links</h2>
+												<ul class="divided">
+													<li><a href="visualization.html#nba">NBA Teams Offensive Data Exploration (1980-2021)</a></li>
+													<li><a href="visualization.html#Beer_Project">Beer Analysis Project with R</a></li>
+													<li><a href="visualization.html#london_crime">London Crime Analysis & Hypothesis Testing (2008-2016)</a></li>
+													<li><a href="sql_project.html#movie">Investigating Sakila DVD Rental Database with SQL</a></li>
+												</ul>
+											</section>
+		
+									</div>
+									
+									<div>          
+										<!-- About -->
+											<section>
+												<h2><strong>Education</strong></h2>
+												<p><li> <strong>Univeristy of California, Santa Barbara: B.A. in History, 2021</strong></li>
+													<li><strong>Southern Methodist University: M.S. in Data Science, 2024</strong></li></p>
+													<a href="my-journey.html" class="button small icon solid fa-arrow-circle-right">Learn More About Me!</a>
+											</section>
+									</div>
+									<div style="float:right;">
+										<!-- Contact -->
+											<section>
+												<h2>Get in touch</h2>
+												<div>
+													<div class="row">
+														<div>
+															<dl class="contact">
+																<dt>LinkedIn</dt>
+																<dd><a href="https://www.linkedin.com/in/dannyc104/">@Dannyc104</a></dd>
+																<dt>Github</dt>
+																<dd><a href="https://github.com/Mr-Chang95">@Mr-Chang95</a></dd>
+																<dt>Email</dt>
+																<dd>mr.dcny@gmail.com</dd>
+															</dl>
+														</div>
+											</section>
+		
+									</div>
+									<div class="col-12">
+										<div id="copyright">
+											<ul class="menu">
+												<li>&copy; Daniel Chang's Portfolio. All rights reserved</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</footer>
+						</div>
+		
+				</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
